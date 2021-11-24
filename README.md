@@ -17,6 +17,7 @@
 ==========================
 ### Opdracht:
 * Het doel is om een stukje uit een bestaand spel 1 op 1 na te maken. 
+* Alle features worden op een nieuwe aparte branch gepushed en het uiteindelijke product is te vinden op "Master"
 
 ### Spel:
 * Undertale
