@@ -4,19 +4,19 @@
 # Trello: https://trello.com/b/9EyfwO3a/beroepsopdracht
 
 # Code Conventies:
-## Unity 2D project
-## C#
+Unity 2D project
+C#
 
 # Developers:
-## Olli Appelt
-## Ryan de Fost
-## Byron van Herrewaarden
-## Jasper Glotzbach
+Olli Appelt
+Ryan de Fost
+Byron van Herrewaarden
+Jasper Glotzbach
 
 # Artists:
-## Max de jong
-## Anas Loukili
-## Nils van 't Schip
-## Xander Rijkse
+Max de jong
+Anas Loukili
+Nils van 't Schip
+Xander Rijkse
 
 # Alle features zijn verdeeld in branches. het uiteindelijke product is te vinden in "Master"
