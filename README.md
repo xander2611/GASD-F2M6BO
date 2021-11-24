@@ -1,22 +1,26 @@
-# Dit is ons F2M6BO project Vertical Slice.
-## Het doel is om een stukje uit een bestaand spel 1 op 1 na te maken. 
+# F2M6BO - Vertical Slice
+==========================
+### Developers:
 
-# Trello: https://trello.com/b/9EyfwO3a/beroepsopdracht
+* Olli Appelt
+* Ryan de Fost
+* Byron van Herrewaarden
+* Jasper Glotzbach
 
-# Code Conventies:
-Unity 2D project
-C#
+### Artists:
 
-# Developers:
-Olli Appelt
-Ryan de Fost
-Byron van Herrewaarden
-Jasper Glotzbach
+* Max de Jong
+* Anas Loukili
+* Nils van 't Schip
+* Xander Rijkse
 
-# Artists:
-Max de jong
-Anas Loukili
-Nils van 't Schip
-Xander Rijkse
+==========================
+### Opdracht:
+* Het doel is om een stukje uit een bestaand spel 1 op 1 na te maken. 
 
-# Alle features zijn verdeeld in branches. het uiteindelijke product is te vinden in "Master"
+### Spel:
+* Undertale
+
+==========================
+### Trello:
+[https://trello.com/b/9EyfwO3a/beroepsopdracht][1]
