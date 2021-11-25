@@ -10,7 +10,9 @@ namespace movement2
      
     public class movement2 : MonoBehaviour
     {
-
+        private SpriteRenderer spriteRenderer;
+        public Sprite sprite1;
+        public Sprite sprite2; 
         public float jumpforce;
         [SerializeField] Rigidbody2D rb;
         private bool isGrounded;
@@ -22,6 +24,9 @@ namespace movement2
         // Start is called before the first frame update
         void Start()
         {
+            spriteRenderer = GetComponent<SpriteRenderer>(); // we are accessing the SpriteRenderer that is attached to the Gameobject
+            if (spriteRenderer.sprite == null) // if the sprite on spriteRenderer is null then
+                spriteRenderer.sprite = sprite1; // set the sprite to sprite1
 
         }
        
@@ -45,6 +50,7 @@ namespace movement2
 
             if (redmode == false)
             {
+                
                 if (Input.GetKeyDown(KeyCode.W) && isGrounded)
                 {
                     rb.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
@@ -62,7 +68,9 @@ namespace movement2
                 Debug.Log("a");
                 if (redmode == false)
                 {
+                    spriteRenderer.sprite = sprite1;
                     Debug.Log("Blue mode");
+                    spriteswap();
                     redmode = true;
                     gravity.simulated = false;
 
@@ -70,6 +78,7 @@ namespace movement2
                 }
                 else if(redmode == true)
                 {
+                    spriteRenderer.sprite = sprite2;
                     Debug.Log("Normal");
                     redmode = false;
                     gravity.simulated = true;
@@ -103,6 +112,10 @@ namespace movement2
                 transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
 
             }
+        }
+        public void spriteswap()
+        {
+          
         }
        
         private void OnCollisionEnter2D(Collision2D other)
