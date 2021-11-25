@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class AttackInitiator : MonoBehaviour
 {
-    //[SerializeField]
-    //private Attack_BoneWave _attack_BoneWave;
-
     [SerializeField]
     private GameObject BoneWave;
     [SerializeField]
     private GameObject BoneUp;
+    [SerializeField]
+    private GameObject Blasters;
+    [SerializeField]
+    private GameObject BlasterSpawnPoint;
 
-
-    private void Start()
-    {
-        Setup();
-    }
 
     private void Update()
     {
@@ -39,12 +35,11 @@ public class AttackInitiator : MonoBehaviour
     {
         GameObject boneUp = Instantiate(BoneUp, transform.position, transform.rotation);
         Destroy(boneUp, 15f);
-
-
     }
 
-    private void Setup()
+    public void instansiateBlasters()
     {
-        //_attack_BoneWave = FindObjectOfType<Attack_BoneWave>();
+        GameObject blasters = Instantiate(Blasters, BlasterSpawnPoint.transform.position, BlasterSpawnPoint.transform.rotation);
+        Destroy(blasters, 15f);
     }
 }
