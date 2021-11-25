@@ -9,6 +9,8 @@ public class AttackInitiator : MonoBehaviour
 
     [SerializeField]
     private GameObject BoneWave;
+    [SerializeField]
+    private GameObject BoneUp;
 
 
     private void Start()
@@ -18,9 +20,13 @@ public class AttackInitiator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Keypad2) && BoneWave != null)
         {
             instansiateBoneWave();
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad1) && BoneUp != null)
+        {
+            instansiateBoneUp();
         }
     }
 
@@ -28,6 +34,13 @@ public class AttackInitiator : MonoBehaviour
     {
         GameObject boneWave = Instantiate(BoneWave, transform.position, transform.rotation);
         Destroy(boneWave, 5f);
+    }
+    public void instansiateBoneUp()
+    {
+        GameObject boneUp = Instantiate(BoneUp, transform.position, transform.rotation);
+        Destroy(boneUp, 15f);
+
+
     }
 
     private void Setup()
