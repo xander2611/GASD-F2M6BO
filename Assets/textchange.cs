@@ -21,6 +21,6 @@ public class textchange : MonoBehaviour
 
     public void nmbrlives()
     {
-        hpdate.text = "KR   " + player.currenthp + " / 92";
+        hpdate.text = "KR   " + player.psnhp + " / 92";
     }
 }

@@ -14,11 +14,21 @@ public class hpbar : MonoBehaviour
     {
         slider.maxValue = health;
         slider.value = health;
+        
     }
     public void SetHealth(int health)
     {
         slider.value = health;
+       
     }
-    
-    
+    public void SetMaxpsnHP(int health)
+    {
+        slider2.maxValue = health;
+        slider2.value = health;
+    }
+    public void SetpsnHealth(int health)
+    {
+        
+        slider2.value = health;
+    }
 }
